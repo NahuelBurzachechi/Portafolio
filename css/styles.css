@@ -1,5 +1,18 @@
 /*CSS NAV*/
 
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F9FC;
+}
+
+.inicio {
+  float: left;
+  margin-left: 25%;
+}
+
 #index-nav {
   width: 100%;
   text-align: center;
@@ -24,8 +37,71 @@
   text-decoration: none;
   color: #8E8E8E;
   font-size: 25px;
+  border-radius: 3px;
 }
 
 #index-nav a:hover {
   background-color: #D1E7F1;
+}
+
+/*CSS IMAGENES*/
+
+#foto-nahuel{
+  width: 20%;
+  height: 20%;
+  float: left;
+  margin-left: 70px;
+  margin-right: 25%;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+/*CSS TÍTULOS*/
+
+
+
+/*CSS P*/
+
+p{
+  margin-top: 200px;
+  font-size: 25px;
+}
+
+/*CSS BOTONES*/
+
+.botones {
+  text-align: center;
+}
+
+#boton-inicio {
+  background-color: #6BC0FB;
+  border: none;
+  color: white;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 1740px){
+  #foto-nahuel {
+    width: 50%;
+    height: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  p {
+    text-align: center;
+    float: none;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  .inicio {
+    float: none;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
