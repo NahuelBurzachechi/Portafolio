@@ -1,7 +1,10 @@
+/*ELEMENTOS CSS*/
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #CCE6FE;
-  padding-right: 20%;
-  padding-left: 20%;
 }
 
 h1 {
@@ -9,13 +12,59 @@ h1 {
   color: white;
   text-align: center;
 }
+
+.links-proyectos:link, .links-proyectos:visited{
+  text-decoration: none;
+  color: black;
+}
+
+/*NAV CSS*/
+
+#index-nav {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#index-nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#index-nav li{
+  float: left;
+}
+
+#index-nav a:link, a:visited{
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #8E8E8E;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+#index-nav a:hover {
+  background-color: #82E7F9;
+}
+
+/*CSS GRID*/
+
 .contenedor {
-  width: 100%;
+  width: 80%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px 300px;
   grid-template-rows: 1fr;
   justify-content: space-evenly;
   justify-items: center;
+  grid-gap: 25px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .card {
@@ -30,7 +79,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
   transition: 0.5s ease;
   cursor: pointer;
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .card-image {
@@ -39,7 +88,6 @@ h1 {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
-
 }
 
 .card-text {
@@ -109,9 +157,10 @@ h1 {
   box-shadow: 5px 5px 15px rgba(0,0,0, 0.6);
 }
 
+/*RESPONSIVE CSS*/
+
 @media only screen and (max-width: 550px){
   .contenedor {
     grid-template-columns: 1fr;
-    margin-left: 0;
   }
 }
